@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <meta name="description" content="把日常片段装订成一页纸刊。" />
+    <title>拾页 zine</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到主要内容</a>
+
+    <main class="app-shell">
+      <aside class="side-navigation" aria-label="主导航">
+        <button class="brand brand--desktop" type="button" data-action="home" aria-label="回到拾页 zine 首页">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span><strong>拾页 zine</strong><small>SCENES, BOUND</small></span>
+        </button>
+
+        <nav class="primary-navigation" aria-label="主要功能">
+          <button class="nav-item is-active" type="button" data-action="home" aria-current="page">
+            <span aria-hidden="true">⌂</span><span>首页</span>
+          </button>
+          <button class="nav-item" type="button" data-action="create">
+            <span aria-hidden="true">＋</span><span>开始创作</span>
+          </button>
+          <button class="nav-item" type="button" data-action="records">
+            <span aria-hidden="true">□</span><span>生成记录</span>
+          </button>
+          <button class="nav-item" type="button" data-action="account">
+            <span aria-hidden="true">○</span><span>我的</span>
+          </button>
+        </nav>
+
+        <section class="coming-soon" aria-labelledby="more-title">
+          <h2 id="more-title">更多纸刊方式</h2>
+          <p><span>影像蒸馏</span><span>即将开放</span></p>
+          <p><span>文字成画</span><span>即将开放</span></p>
+        </section>
+
+        <div class="side-spacer"></div>
+
+        <button class="invite-card" type="button" data-action="account">
+          <strong>邀请一起装订</strong>
+          <span>登录后可保存创作记录</span>
+          <em>登录查看</em>
+        </button>
+
+        <section class="login-card" aria-label="账户入口">
+          <span class="account-seal" aria-hidden="true">拾</span>
+          <div>
+            <strong>登录后开始装订</strong>
+            <span>邮箱验证码登录</span>
+            <button type="button" data-action="account">登录</button>
+          </div>
+        </section>
+
+        <p class="legal-links">
+          <button type="button" data-action="notice">隐私政策</button>
+          <button type="button" data-action="notice">用户协议</button>
+          <button type="button" data-action="notice">数据与投诉</button>
+        </p>
+      </aside>
+
+      <div class="mobile-brandbar">
+        <button class="brand brand--mobile" type="button" data-action="home" aria-label="回到拾页 zine 首页">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <strong>拾页 zine</strong>
+        </button>
+      </div>
+
+      <div class="page-content" id="content">
+        <header class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <h1 id="hero-title">把日常片段，<span>装订成值得翻阅的一页。</span></h1>
+          </div>
+          <div class="hero-intro">
+            <p>上传一张照片。保留真实的人与场景，让纸面、黑墨和一处黄色继续生长。</p>
+            <button class="text-link" type="button" data-action="create">查看创作方式 <span aria-hidden="true">↗</span></button>
+          </div>
+        </header>
+
+        <section class="gallery-section" aria-labelledby="gallery-title">
+          <div class="section-heading">
+            <h2 id="gallery-title">作品集</h2>
+            <span>12 WORKS</span>
+          </div>
+
+          <div class="gallery" role="list">
+            <button class="gallery-card ratio-tall" type="button" role="listitem" data-work="湖边停留" style="--order: 1">
+              <img src="./public/assets/zine-01.webp" width="452" height="493" alt="湖边人物与纸张拼贴" fetchpriority="high" />
+            </button>
+            <button class="gallery-card ratio-medium" type="button" role="listitem" data-work="海岸线" style="--order: 2">
+              <img src="./public/assets/zine-02.webp" width="452" height="493" alt="海岸与黄色太阳拼贴" />
+            </button>
+            <button class="gallery-card ratio-tall" type="button" role="listitem" data-work="手中花" style="--order: 3">
+              <img src="./public/assets/zine-03.webp" width="452" height="493" alt="双手捧着花束的纸刊拼贴" />
+            </button>
+            <button class="gallery-card ratio-short" type="button" role="listitem" data-work="墙边单车" style="--order: 4">
+              <img src="./public/assets/zine-04.webp" width="452" height="493" alt="墙边自行车与黄色纸片拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-tall" type="button" role="listitem" data-work="风中树" style="--order: 5">
+              <img src="./public/assets/zine-05.webp" width="452" height="493" alt="风中树木与墨迹拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-medium" type="button" role="listitem" data-work="窗与椅" style="--order: 6">
+              <img src="./public/assets/zine-06.webp" width="452" height="493" alt="窗边木椅与黄色纸片拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-medium" type="button" role="listitem" data-work="雨中街口" style="--order: 7">
+              <img src="./public/assets/zine-07.webp" width="483" height="490" alt="雨中街口与行人拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-tall" type="button" role="listitem" data-work="列车窗边" style="--order: 8">
+              <img src="./public/assets/zine-08.webp" width="483" height="490" alt="列车座椅与窗外景色拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-short" type="button" role="listitem" data-work="山路" style="--order: 9">
+              <img src="./public/assets/zine-09.webp" width="483" height="490" alt="山间石路与黄色纸片拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-tall" type="button" role="listitem" data-work="桌上静物" style="--order: 10">
+              <img src="./public/assets/zine-10.webp" width="483" height="490" alt="梨与陶杯静物拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-medium" type="button" role="listitem" data-work="树下阅读" style="--order: 11">
+              <img src="./public/assets/zine-11.webp" width="483" height="490" alt="树下阅读的人与远景拼贴" loading="lazy" />
+            </button>
+            <button class="gallery-card ratio-tall" type="button" role="listitem" data-work="晾晒日光" style="--order: 12">
+              <img src="./public/assets/zine-12.webp" width="483" height="490" alt="日光下晾晒衣物的纸刊拼贴" loading="lazy" />
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <button class="floating-create" type="button" data-action="create"><span aria-hidden="true">＋</span> 开始创作</button>
+
+      <nav class="mobile-navigation" aria-label="移动端主导航">
+        <button class="is-active" type="button" data-action="home" aria-current="page"><span aria-hidden="true">⌂</span><span>首页</span></button>
+        <button type="button" data-action="create"><span aria-hidden="true">＋</span><span>开始创作</span></button>
+        <button type="button" data-action="records"><span aria-hidden="true">□</span><span>生成记录</span></button>
+        <button type="button" data-action="account"><span aria-hidden="true">○</span><span>我的</span></button>
+      </nav>
+    </main>
+
+    <dialog class="modal" id="create-dialog" aria-labelledby="create-title">
+      <form class="modal-panel create-panel" method="dialog">
+        <div class="modal-heading">
+          <div><p>开始创作</p><h2 id="create-title">选择一张普通照片</h2></div>
+          <button class="icon-button" type="submit" value="close" aria-label="关闭" formnovalidate>×</button>
+        </div>
+        <label class="upload-zone" for="photo-input">
+          <input id="photo-input" type="file" accept="image/jpeg,image/png,image/webp" />
+          <span class="upload-symbol" aria-hidden="true">＋</span>
+          <strong>选择照片</strong>
+          <span>JPG、PNG 或 WebP，最大 8 MB</span>
+        </label>
+        <div class="upload-preview" hidden>
+          <img alt="待装订照片预览" />
+          <div><strong>照片已准备</strong><span class="file-name"></span></div>
+        </div>
+        <p class="form-message" role="alert" hidden></p>
+        <div class="modal-actions">
+          <button class="button button--secondary" type="submit" value="close">取消</button>
+          <button class="button button--primary" type="button" id="bind-button" disabled>装订预览</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="records-dialog" aria-labelledby="records-title">
+      <form class="modal-panel" method="dialog">
+        <div class="modal-heading">
+          <div><p>生成记录</p><h2 id="records-title">还没有装订记录</h2></div>
+          <button class="icon-button" type="submit" value="close" aria-label="关闭">×</button>
+        </div>
+        <div class="empty-state"><span aria-hidden="true">□</span><p>完成第一次纸刊创作后，记录会保存在这里。</p></div>
+        <div class="modal-actions">
+          <button class="button button--secondary" type="submit" value="close">稍后再看</button>
+          <button class="button button--primary" type="button" data-action="create">开始创作</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="account-dialog" aria-labelledby="account-title">
+      <form class="modal-panel" method="dialog" id="login-form">
+        <div class="modal-heading">
+          <div><p>我的</p><h2 id="account-title">登录后保存纸刊</h2></div>
+          <button class="icon-button" type="submit" value="close" aria-label="关闭" formnovalidate>×</button>
+        </div>
+        <label class="field" for="email"><span>邮箱</span><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required /></label>
+        <p class="field-help">演示站不会发送验证码或保存邮箱。</p>
+        <p class="form-message" role="alert" hidden></p>
+        <div class="modal-actions">
+          <button class="button button--secondary" type="submit" value="close" formnovalidate>取消</button>
+          <button class="button button--primary" type="submit" value="login">继续</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="work-dialog" aria-labelledby="work-title">
+      <form class="modal-panel work-panel" method="dialog">
+        <div class="modal-heading">
+          <div><p>纸刊作品</p><h2 id="work-title"></h2></div>
+          <button class="icon-button" type="submit" value="close" aria-label="关闭">×</button>
+        </div>
+        <img class="work-image" alt="" />
+      </form>
+    </dialog>
+
+    <dialog class="modal" id="notice-dialog" aria-labelledby="notice-title">
+      <form class="modal-panel" method="dialog">
+        <div class="modal-heading"><div><p>站点说明</p><h2 id="notice-title">演示内容</h2></div><button class="icon-button" type="submit" value="close" aria-label="关闭">×</button></div>
+        <p class="notice-copy">这是本地视觉与交互复刻。政策、账户和生成服务尚未接入真实后端。</p>
+        <div class="modal-actions"><button class="button button--primary" type="submit" value="close">知道了</button></div>
+      </form>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" hidden></div>
+  </body>
+</html>
